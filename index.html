@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect 4 Game</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container text-center mt-5 position-relative">
+      <h1 class="display-4">Connect 4</h1>
+      <div id="game-board" class="justify-content-center mt-4"></div>
+      <button id="restart-btn" class="btn btn-warning mt-4">
+        Restart Game
+      </button>
+      <div
+        id="notification"
+        class="notification position-absolute top-50 start-50 translate-middle p-4 rounded shadow-lg"
+      ></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
