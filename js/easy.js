@@ -84,7 +84,7 @@ function makeAiMove(col) {
       gameBoard[row][col] = PLAYER2;
       updateBoard();
       if (checkWin(row, col, PLAYER2)) {
-        displayNotification(`Connect Bot wins!`);
+        displayNotification(`CPU Wins!`);
         isPlayerTurn = false; // Prevent further moves
         return;
       }
