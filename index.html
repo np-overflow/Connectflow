@@ -13,10 +13,18 @@
   <body class="bg-dark text-white">
     <div class="container text-center mt-5 position-relative">
       <h1 class="display-4">Connect 4</h1>
+
+      <div class="d-flex justify-content-around mt-4">
+        <div id="player-wins" class="text-warning">Player Wins: 0</div>
+        <div id="cpu-wins" class="text-primary">CPU Wins: 0</div>
+      </div>
+
       <div id="game-board" class="justify-content-center mt-4"></div>
+
       <button id="restart-btn" class="btn btn-warning mt-4">
         Restart Game
       </button>
+
       <div
         id="notification"
         class="notification position-absolute top-50 start-50 translate-middle p-4 rounded shadow-lg"

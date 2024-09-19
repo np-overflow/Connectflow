@@ -6,6 +6,9 @@ const MAX_DEPTH = 5;
 let currentPlayer = PLAYER1;
 let gameBoard = [];
 let isPlayerTurn = true;
+let playerWins = 0;
+let cpuWins = 0;
+
 const gameContainer = document.getElementById("game-board");
 const restartButton = document.getElementById("restart-btn");
 const notification = document.getElementById("notification");
@@ -36,7 +39,7 @@ function handleCellClick(event) {
       updateBoard();
       if (checkWin(row, col, currentPlayer)) {
         console.log(`Player 1 wins!`);
-        displayNotification(`Congratualtions, You Win!!`);
+        displayNotification(`Congratulations, You Win!!`);
         isPlayerTurn = false; // Prevent further moves
         return;
       }
@@ -251,6 +254,15 @@ function checkWin(row, col, player) {
 
   if (win) {
     console.log(`${player} wins!`);
+    if (player === PLAYER1) {
+      playerWins++;
+      document.getElementById(
+        "player-wins"
+      ).textContent = `Player Wins: ${playerWins}`;
+    } else if (player === PLAYER2) {
+      cpuWins++;
+      document.getElementById("cpu-wins").textContent = `CPU Wins: ${cpuWins}`;
+    }
   }
   return win;
 }
