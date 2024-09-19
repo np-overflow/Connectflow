@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  width: 40vh !important;
+  border-radius: 5vh;
+}
+
+#initial-buttons .btn,
+#difficulty-buttons .btn {
+  width: 200px;
+  font-size: 1.5rem;
+}
+
+#initial-buttons {
+  transition: opacity 0.5s ease;
+}
+
+#difficulty-buttons {
+  transition: opacity 0.5s ease;
+}

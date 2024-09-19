@@ -28,6 +28,14 @@ body {
   background-color: #007bff;
 }
 
+#player-wins {
+  font-size: 1.3em;
+}
+
+#cpu-wins {
+  font-size: 1.3em;
+}
+
 .notification {
   display: none;
   position: fixed;
@@ -47,4 +55,21 @@ body {
 
 #game-board {
   z-index: 1; /* Ensures game-board is behind the notification */
+}
+
+button {
+  width: 100px; /* Set a fixed width for both buttons */
+  font-size: 1.25rem; /* Adjust the font size if needed */
+}
+
+#restart-btn {
+  width: 150px; /* Ensure both buttons have the same width */
+}
+
+#back-btn {
+  width: 150px; /* Ensure both buttons have the same width */
+}
+
+button {
+  padding: 10px 20px; /* Padding for a better button appearance */
 }
